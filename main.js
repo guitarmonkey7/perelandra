@@ -11,7 +11,10 @@ const adjectiveArray = ['super','gnarly','funky','spinning','smashing','deliciou
 'made-in-China','Russian','Antarctic','African','Canadian','turquoise','alien','melted','dissolving','carbonated','flat','distended','attentive','plastered','abecedarian',
 'rudimentary','sacreligious','intolerant', 'lactose-intolerant', 'serpentine','waning','waxing','aqueous','ravenous','crocodilian', 'Seinfeldian','Ricktastic', 'mortified',
 'mammalian', 'reptilian', 'rock-hard', 'Freudian','erect','solid', 'dumpy', 'mollycoddled', 'bamboozled','used','abused','recycled','Jewish','stingy','shit-faced','Zionist',
-'mustachioed','wasted','snockered','drunk','toinkered','flying','pretentious','superfluous']
+'mustachioed','wasted','snockered','drunk','toinkered','flying','pretentious','superfluous','Hispanic','affluent','cranberry','tangerine','glass','short','extended','bloody',
+'disgusting','morose','recently deceased','wormy','wriggling','balding','obnoxious','ostentatious','silent','vertical','horizontal','longitudinal','duck-walking','unkempt',
+'well-groomed','disheveled','headless','bearded','sloped','cascading','rainbow','colorful','naughty','stoned','pulsating','throbbing','veiny','corded','special','friendly',
+'unfriendly','varicose','frosted','frost','bespectacled']
 
 const adverbArray = ['somewhat','inadvertantly','slightly','mostly','overly','socially','technically','partially','absurdly','undoubtedly','possibly','understandably','marginally',
 'morbidly','exceedingly','nonchalantly','scarily','frighteningly','sort of','absolutely','totally','non']
@@ -45,7 +48,8 @@ const nounArray = [
     'alien','cohort','sorcerer','ranger','alcoholic','',
     'wimp','nipple','ass', 'psychogalvanometer','weasel',
     'herald', 'bazongas', 'boaner', 'schlongle', 'diamond-cutter', 'dump','terd', 'brouhaha', 'melee', 'donnybrook','rigmarole', 'winklepicker', 'hullaballoo', 'gobbledygook',
-    'whippersnapper', 'dipthong', 'fisticuffs','rascal'
+    'whippersnapper', 'dipthong', 'fisticuffs','rascal','fart','shart','organ','dafodil','warthog','behemoth','leviathan','polka','rainbow','nightgown','undergarment','thong',
+    'thief','icon','idol','stone','loser','Indian','tip',''
   ]
 
 const createBandName = () => {
@@ -56,19 +60,21 @@ const createBandName = () => {
   let selector = Math.floor(Math.random()*100);
   let simpleName = `${adjectiveArray[adjectiveIndex]} ${nounArray[nounIndex]}`;
   let finalName = `${simpleName}`;
-  if (selector < 40) {
+  if (selector < 50) {
     modifier = '';
-  } else if (selector < 70) {
+  } else if (selector < 75) {
     modifier = 'The';
     let newNoun = nounArray[nounIndex];
     // simpleName = `${adjectiveArray[adjectiveIndex]} ${pluralize(newNoun)}`;
     finalName = `${modifier} ${finalName}s`;
-  } else if (selector < 100) {
+  } else if (selector < 98) {
     modifier = adverbArray[adverbIndex];
     finalName = `${modifier} ${finalName}`;
-  } else if (selector == 100) {
+  } else if (selector < 100) {
     let secondNounIndex = Math.floor(Math.random()*nounArray.length);
-    finalName = `${nounArray[nounIndex]} ${nounArray[secondNounIndex]}`;
+    let firstNoun = nounArray[nounIndex];
+    let secondNoun = nounArray[secondNounIndex];
+    finalName = `${firstNoun} ${secondNoun}`;
   }
   return finalName;
 }
