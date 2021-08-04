@@ -14,10 +14,14 @@ const adjectiveArray = ['super','gnarly','funky','spinning','smashing','deliciou
 'mustachioed','wasted','snockered','drunk','toinkered','flying','pretentious','superfluous','Hispanic','affluent','cranberry','tangerine','glass','short','extended','bloody',
 'disgusting','morose','recently deceased','wormy','wriggling','balding','obnoxious','ostentatious','silent','vertical','horizontal','longitudinal','duck-walking','unkempt',
 'well-groomed','disheveled','headless','bearded','sloped','cascading','rainbow','colorful','naughty','stoned','pulsating','throbbing','veiny','corded','special','friendly',
-'unfriendly','varicose','frosted','frost','bespectacled']
+'unfriendly','varicose','frosted','frost','bespectacled','lactating','squirting','fecal','feral','wild','enthusiastic','hidden','secret','pestilent','porous','evil',
+'angelic','ungodly','gold','diamond','jade','emerald','opaque','obtuse','acute','unwarranted','impossible','boring','chocolate-covered','defiled','expectant','pregnant',
+'curvy','voluptuous','enormous','buried','unfortunate','misanthropic','altruistic','king of','lord of','god of','voided','nihilist','annihilated','disrupted','scorned',
+'ignored','granite','slate','pixelated','censored','fuzzy','manscaped','trimmed','large-cleavaged','gapped','gashed','toothless','nocturnal','rushed','snivelling',
+'menstrual','menstruating','smooshy','mushy','squishy','squelching','wretched','']
 
 const adverbArray = ['somewhat','inadvertantly','slightly','mostly','overly','socially','technically','partially','absurdly','undoubtedly','possibly','understandably','marginally',
-'morbidly','exceedingly','nonchalantly','scarily','frighteningly','sort of','absolutely','totally','non']
+'morbidly','exceedingly','nonchalantly','scarily','frighteningly','sort of','absolutely','totally','non','holy','unholy','satanic','demonic','ultimate','']
 
 const nounArray = [
     'darkness', 'light',      'midnight',
@@ -49,7 +53,10 @@ const nounArray = [
     'wimp','nipple','ass', 'psychogalvanometer','weasel',
     'herald', 'bazongas', 'boaner', 'schlongle', 'diamond-cutter', 'dump','terd', 'brouhaha', 'melee', 'donnybrook','rigmarole', 'winklepicker', 'hullaballoo', 'gobbledygook',
     'whippersnapper', 'dipthong', 'fisticuffs','rascal','fart','shart','organ','daffodil','warthog','behemoth','leviathan','polka','rainbow','nightgown','undergarment','thong',
-    'thief','icon','idol','stone','loser','Indian','tip',''
+    'thief','icon','idol','stone','loser','Indian','tip','hiney','piehole','pate','skull','noggin','eagle','patriot','moon','sun','planet','star','sky','cloud','wisp','waif',
+    'train','charlatan','brown-noser','billy club','pistol','shotgun','knife','tommy gun','peter','john','sheep','dwarf','dork','nerd','geek','knocker','blossom','petal','leaf',
+    'tree','whelp','brat','devil','demon','angel','demigod','void','nothing','dweeb','weevil','coward','Howard Stern','Hugh Heffner','blackjack','knight','jester','bard',
+    'minstrel','fornicater','liar','wretch',''
   ]
 
 const createBandName = () => {
