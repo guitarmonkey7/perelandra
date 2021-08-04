@@ -48,7 +48,7 @@ const nounArray = [
     'alien','cohort','sorcerer','ranger','alcoholic','',
     'wimp','nipple','ass', 'psychogalvanometer','weasel',
     'herald', 'bazongas', 'boaner', 'schlongle', 'diamond-cutter', 'dump','terd', 'brouhaha', 'melee', 'donnybrook','rigmarole', 'winklepicker', 'hullaballoo', 'gobbledygook',
-    'whippersnapper', 'dipthong', 'fisticuffs','rascal','fart','shart','organ','dafodil','warthog','behemoth','leviathan','polka','rainbow','nightgown','undergarment','thong',
+    'whippersnapper', 'dipthong', 'fisticuffs','rascal','fart','shart','organ','daffodil','warthog','behemoth','leviathan','polka','rainbow','nightgown','undergarment','thong',
     'thief','icon','idol','stone','loser','Indian','tip',''
   ]
 
